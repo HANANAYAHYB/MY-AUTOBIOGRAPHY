@@ -1,2 +1,256 @@
 # MY-AUTOBIOGRAPHY
-MY AUTOBIOGRAPHY by HANAB.
+MY AUTOBIOGRAPHY by HANANIAHB.
+
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+<meta charset="UTF-8">  
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
+<title>My Autobiography - Hananiah Y. Bacalso</title>  
+<style>  
+  body {  
+    margin: 0;  
+    height: 100vh;  
+    background: #e0d6c6;  
+    display: flex;  
+    justify-content: center;  
+    align-items: center;  
+    font-family: "Georgia", serif;  
+  }  
+  
+  .book {  
+    position: relative;  
+    width: 700px;  
+    height: 480px;  
+    perspective: 2000px;  
+  }  
+  
+  .page {  
+    position: absolute;  
+    width: 100%;  
+    height: 100%;  
+    background: #fffdf5;  
+    border: 1px solid #b59b6d;  
+    border-radius: 10px;  
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);  
+    transform-origin: left;  
+    transition: transform 1s ease-in-out;  
+    backface-visibility: hidden;  
+    overflow: hidden;  
+    padding: 20px;  
+    box-sizing: border-box;  
+  }  
+  
+  .images {  
+    display: flex;  
+    justify-content: center;  
+    gap: 10px;  
+    margin-bottom: 15px;  
+  }  
+  
+  .images img {  
+    width: 30%;  
+    height: 180px;  
+    object-fit: cover;  
+    border-radius: 5px;  
+    border: 1px solid #b59b6d;  
+  }  
+  
+  h1, h2 {  
+    text-align: center;  
+    color: #5c4931;  
+  }  
+  
+  h1 {  
+    margin-top: 173px;  
+    font-size: 40px;  
+  }  
+  
+  h2 {  
+    margin-top: 10px;  
+    font-size: 22px;  
+  }  
+  
+  p {  
+    text-align: justify;  
+    color: #3b3024;  
+    font-size: 16px;  
+  }  
+  
+  input[type="checkbox"] {  
+    display: none;  
+  }  
+  
+  label {  
+    position: absolute;  
+    bottom: 15px;  
+    background: #b59b6d;  
+    color: #fff;  
+    padding: 8px 14px;  
+    border-radius: 5px;  
+    cursor: pointer;  
+    font-size: 14px;  
+    user-select: none;  
+    transition: background 0.3s;  
+  }  
+  
+  label:hover {  
+    background: #927c55;  
+  }  
+  
+  label.next { right: 20px; }  
+  label.back { left: 20px; }  
+    
+  #page1:checked ~ .p1 { transform: rotateY(-180deg); }  
+  #page2:checked ~ .p2 { transform: rotateY(-180deg); }  
+  #page3:checked ~ .p3 { transform: rotateY(-180deg); }  
+  #page4:checked ~ .p4 { transform: rotateY(-180deg); }  
+  #page5:checked ~ .p5 { transform: rotateY(-180deg); }  
+  #page6:checked ~ .p6 { transform: rotateY(-180deg); }  
+  
+  .p1 { z-index: 7; }  
+  .p2 { z-index: 6; }  
+  .p3 { z-index: 5; }  
+  .p4 { z-index: 4; }  
+  .p5 { z-index: 3; }  
+  .p6 { z-index: 2; }  
+  .p7 { z-index: 1; }  
+  
+</style>  
+</head>  
+<body>  
+  
+<div class="book">  
+  <input type="checkbox" id="page1">  
+  <input type="checkbox" id="page2">  
+  <input type="checkbox" id="page3">  
+  <input type="checkbox" id="page4">  
+  <input type="checkbox" id="page5">  
+  <input type="checkbox" id="page6">  
+  
+ 
+  <div class="page p1">  
+    <h1>MY AUTOBIOGRAPHY</h1>  
+    <h2>BY HANANIAH Y. BACALSO</h2>  
+    <label for="page1" class="next">Next </label>  
+  </div>  
+  
+
+  <div class="page p2">  
+    <h2>About Me</h2>  
+    <div class="images">  
+      <img src="image1.jpeg" alt="About Me 1">  
+      <img src="image2.jpeg" alt="About Me 2">  
+      <img src="image3.jpeg" alt="About Me 3">  
+    </div>  
+    <p>I am Hananiah Y. Bacalso, and this is my story. Each moment 
+        and experience helped shape who I am today — someone full of dreams and determination. 
+        I am 18 years old and live in Timpolok, Babag, Lapu-Lapu City. 
+        I am a pianist who loves music because it helps me express my feelings and relax. 
+        Since I was young, I have always enjoyed listening to songs and playing the piano. 
+        I also love eating and spending time with the people close to me. 
+        I like making the people in my circle feel special and seen. 
+        These simple things make me happy and remind me to be thankful for what I have. 
+        Life is not always easy, but I keep trying to do my best and reach my dreams. 
+        This is who I am and who I continue to become.</p>  
+    <label for="page1" class="back"> Back</label>  
+    <label for="page2" class="next">Next </label>  
+  </div>  
+   
+  <div class="page p3">  
+    <h2>My Family</h2>  
+    <div class="images">  
+      <img src="image4.jpeg" alt="Family Photo 1">  
+      <img src="image5.jpeg" alt="Family Photo 2">  
+      <img src="image6.jpeg" alt="Family Photo 3">  
+    </div>  
+    <p>My family has always been my strength, love, and inspiration. 
+        They taught me kindness, hard work, and to always believe in myself. 
+        My family has been my biggest supporter since the day I was born. 
+        They have taught me important values that helped me become who I am today. 
+        I feel so blessed to have them as my parents. I have two brothers, 
+        and I am the only girl and the middle child in our family. 
+        Even though we sometimes argue, we always end up laughing together and 
+        supporting one another. My family gives me the courage to face challenges 
+        and the reason to keep going.</p>  
+    <label for="page2" class="back">Back</label>  
+    <label for="page3" class="next">Next </label>  
+  </div>  
+  
+
+  <div class="page p4">  
+    <h2>My Elementary Days</h2>  
+    <div class="images">  
+      <img src="image7.jpeg" alt="Elementary Photo 1">  
+      <img src="image8.jpeg" alt="Elementary Photo 2">  
+      <img src="image9.jpeg" alt="Elementary Photo 3">  
+    </div>  
+    <p>In my elementary journey, I learned the basics and discovered my love for learning. 
+        Those years taught me the importance of discipline, curiosity, and doing my best 
+        in everything I do. I am also thankful to my teachers and friends who guided me and helped me grow. 
+        They taught us to be mindful, respectful, and responsible in everything we do. 
+        Because of them, I learned how to be more mature and prepared for the next stages of my life.</p>  
+    <label for="page3" class="back"> Back</label>  
+    <label for="page4" class="next">Next </label>  
+  </div>  
+  
+
+  <div class="page p5">  
+    <h2>My High School Life</h2>  
+    <div class="images">  
+      <img src="image10.jpeg" alt="High School Photo 1">  
+      <img src="image11.jpeg" alt="High School Photo 2">  
+      <img src="image12.jpeg" alt="High School Photo 3">  
+    </div>  
+    <p>High school was a time of laughter, lessons, and unforgettable friendships. 
+        It shaped my personality and prepared me for new adventures. 
+        It helped me discover what I truly like and what I want to be in the future. 
+        I met many different kinds of people and learned how to understand and get along with them. 
+        Through these experiences, I grew as a person and became more confident in being myself.</p>  
+    <label for="page4" class="back"> Back</label>  
+    <label for="page5" class="next">Next</label>  
+  </div>  
+  
+ 
+  <div class="page p6">  
+    <h2>My Senior High School</h2>  
+    <div class="images">  
+      <img src="image13.jpeg" alt="Senior High Photo 1">  
+      <img src="image14.jpeg" alt="Senior High Photo 2">  
+      <img src="image15.jpeg" alt="Senior High Photo 3">  
+    </div>  
+    <p>During Senior High, I took the ICT strand, which improved my knowledge and skills in technology. 
+       It was a time of growth, challenges, and discovery. I faced many difficulties, but I learned 
+       to handle them with courage and determination. I am also happy to have met my friends Jeanny 
+       and Kenneth, who made my journey more meaningful. We faced different challenges together, 
+       supported one another, and succeeded in the end. I am truly glad that I was able to study 
+       something I am passionate about and continue learning more about technology.</p>  
+    <label for="page5" class="back"> Back</label>  
+    <label for="page6" class="next">Next </label>  
+  </div>  
+
+  <div class="page p7">  
+    <h2>My First Year in College</h2>  
+    <div class="images">  
+      <img src="image16.jpeg" alt="College Photo 1">  
+      <img src="image17.jpeg" alt="College Photo 2">  
+      <img src="image180.jpeg" alt="College Photo 3">  
+    </div>  
+    <p>College life is full of new experiences and responsibilities. 
+        I am currently a first-year college student taking my dream course, 
+        Bachelor of Industrial Technology, major in Computer Technology. 
+        Although I originally wanted to take Computer Engineering, 
+        I wasn’t able to find a nearby school that offered it. 
+        Still, I am happy and thankful to study something I love. 
+        Right now, I face bigger challenges than before, but I know I can overcome them. 
+        I have friends who serve as my support system, and we always help each other 
+        through every difficulty. I believe that the challenges I face today are steps 
+        toward my growth and future success.</p>  
+    <p style="text-align:center; margin-top:30px;">— The End —</p>  
+    <label for="page6" class="back"> Back</label>  
+  </div>  
+  
+</div>  
+  
+</body>  
+</html>
